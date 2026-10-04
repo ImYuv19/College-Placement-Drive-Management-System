@@ -12,7 +12,7 @@ import axios from 'axios';
 
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: 'http://localhost:5001/api'
+  baseURL: import.meta.env.VITE_API_URL || 'https://college-placement-drive-management-system.onrender.com/api'
 });
 
 /**
